@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://github.com/cecile-macaire.github.io',
+  site: 'https://github.com/macairececile.github.io',
   integrations: [mdx(), sitemap(), tailwind()]
 });
