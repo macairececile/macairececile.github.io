@@ -3,101 +3,84 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Software" sideBarActiveItemID="software">
+<BaseLayout title="Software" sideBarActiveItemID="software">
     <div>
         <div class="text-3xl w-full font-bold mb-5">Software & Dataset</div>
     </div>
 
-    <div class="text-xl py-1 font-bold">Software:</div>
-
-    <div class="carousel carousel-center p-7 space-x-7 rounded-box">
-        <div class="carousel-item">
-
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-5 pt-5">
-            <img src="/Voice2Picto.png" alt="Voice2Picto" class="Voice2Picto" />
-        </figure>
-        <div class="card-body items-center justify-end">
-            <h2 class="card-title">Voice2Picto</h2>
-            <p>App which directly translates speech into a sequence of pictograms.</p>
-            <div class="card-actions">
-                <button class="btn btn-secondary"><a target="_blank" href="https://github.com/macairececile/Voice2Picto">Link</a></button>
-            </div>
-        </div>
-
-    </div>
-        </div>
-
-    <br/>
-
-        <div class="carousel-item">
-
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-5 pt-5">
-            <img src="/annotvocab.png" alt="AnnotVocab" class="AnnotVocab" />
-        </figure>
-        <div class="card-body items-center justify-end">
-            <h2 class="card-title">DicoPicto</h2>
-            <p>Online platform that allows to manually annotate words into ARASAAC pictograms.</p>
-            <div class="card-actions">
-                <button class="btn btn-secondary"><a target="_blank" href="https://lig-interaactionpicto.imag.fr/#/DicoPicto">Link</a></button>
-            </div>
-        </div>
-    </div>
-        </div>
-
-    <br/>
-    </div>
-
-        <div class="carousel carousel-center p-7 space-x-7 rounded-box">
-
-            <div class="carousel-item">
-
-    <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-5 pt-5">
-            <img src="/post-edit.png" alt="postedit" class="postedit" />
-        </figure>
-        <div class="card-body items-center justify-end">
-            <h2 class="card-title">PostEditPicto</h2>
-            <p>Online platform that helps post-edit French sentences translated into sequences of ARASAAC pictograms.</p>
-            <div class="card-actions">
-                <button class="btn btn-secondary"><a target="_blank" href="https://lig-interaactionpicto.imag.fr/#/PostEditPictoHome">Link</a></button>
-            </div>
-        </div>
-    </div>
-        </div>
-
-            <div class="carousel-item">
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-5 pt-5">
-                        <img src="/emosense.png" alt="emosense" class="emosense" />
-                    </figure>
-                    <div class="card-body items-center justify-end">
-                        <h2 class="card-title">emoSense</h2>
-                        <p>An android application to measure sensitivity to different emotions from facial expression.</p>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <br/><br/>
-
-    <div class="text-xl py-1 font-bold">Dataset:</div>
-
-    <div class="carousel carousel-center p-7 space-x-7 rounded-box">
-    <div class="carousel-item">
+    <div class="flex flex-wrap gap-4 justify-center">
         <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-5 pt-5">
-                <img src="/propicto.svg" alt="propicto_data" class="propicto_data" />
+                <img src="/Voice2Picto.png" alt="Voice2Picto" class="Voice2Picto"/>
+            </figure>
+            <div class="card-body items-center justify-end">
+                <h2 class="card-title">Voice2Picto</h2>
+                <p>App which directly translates speech into a sequence of pictograms.</p>
+                <div class="card-actions">
+                    <button class="btn btn-secondary">
+                        <a target="_blank" href="https://github.com/macairececile/Voice2Picto">Link</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-5 pt-5">
+                <img src="/annotvocab.png" alt="AnnotVocab" class="AnnotVocab"/>
+            </figure>
+            <div class="card-body items-center justify-end">
+                <h2 class="card-title">DicoPicto</h2>
+                <p>Online platform that allows to manually annotate words into ARASAAC pictograms.</p>
+                <div class="card-actions">
+                    <button class="btn btn-secondary">
+                        <a target="_blank" href="https://lig-interaactionpicto.imag.fr/#/DicoPicto">Link</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-5 pt-5">
+                <img src="/post-edit.png" alt="postedit" class="postedit"/>
+            </figure>
+            <div class="card-body items-center justify-end">
+                <h2 class="card-title">PostEditPicto</h2>
+                <p>Online platform that helps post-edit French sentences translated into sequences of ARASAAC
+                    pictograms.</p>
+                <div class="card-actions">
+                    <button class="btn btn-secondary"><a target="_blank"
+                                                         href="https://lig-interaactionpicto.imag.fr/#/PostEditPictoHome">Link</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-5 pt-5">
+                <img src="/emosense.png" alt="emosense" class="emosense"/>
+            </figure>
+            <div class="card-body items-center justify-end">
+                <h2 class="card-title">emoSense</h2>
+                <p>An android application to measure sensitivity to different emotions from facial expression.</p>
+            </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-5 pt-5">
+                <img src="/propicto.svg" alt="propicto_data" class="propicto_data"/>
             </figure>
             <div class="card-body items-center justify-end">
                 <h2 class="card-title">Propicto</h2>
-                <p>Corpus of French aligned data speech / text / pictograms (the pictograms correspond to the identifier linked to an ARASAAC pictogram).</p>
+                <p>Corpus of French aligned Speech, text, and pictograms (the pictograms correspond to identifiers
+                    linked to
+                    ARASAAC pictograms).</p>
                 <div class="card-actions">
-                    <button class="btn btn-secondary"><a target="_blank" href="https://www.ortolang.fr/market/corpora/propicto">Link</a></button>
+                    <button class="btn btn-secondary"><a target="_blank"
+                                                         href="https://www.ortolang.fr/market/corpora/propicto">Link</a>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
 </BaseLayout>

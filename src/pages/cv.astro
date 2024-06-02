@@ -4,145 +4,169 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">CV</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">CV</div>
+    </div>
 
-  <!--<div class="mb-10 text-justify">-->
-  <!--  -->
-  <!--</div>-->
+    <!--<div class="mb-10 text-justify">-->
+    <!--  -->
+    <!--</div>-->
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Education</div>
+    </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Ph.D - Automatic Speech Translation into pictograms"
-      subtitle="Started in 2021 - at Université Grenoble Alpes (UGA), Laboratoire d'Informatique de Grenoble (LIG), GETALP team, Grenoble, France"
-    />
-    <TimeLineElement
-      title="MSc - Natural Language Processing (NLP)"
-      subtitle="From 2019 to 2021 at Institut des Sciences du Digital (IDMC), Université de Lorraine, Nancy, France"
-    >
-    Multidisciplinary program in computer science, natural language processing and linguistics (machine learning, deep learning, data science, morphology, phonetics, semantics, etc.).
-    </TimeLineElement>
-    <TimeLineElement
-        title="BS - Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales (MIASHS)"
-        subtitle="From 2017 to 2019 at Université de Bordeaux, Bordeaux, France"
-    >
-    Multidisciplinary program in Mathematics, Statistics, Computer Science and Cognitive Sciences.
-      End of bachelor's degree research work: "Study and Modeling of Brain-Computer Interface (BCI) Acceptability Factors in Stroke Recovery", under the supervision of Marc-Michel Corsini and Camille Jeunet.
-    </TimeLineElement>
-    <TimeLineElement
-        title="DUT - Computer Science"
-        subtitle="From 2015 to 2017 at Université de Bordeaux, Bordeaux, France"
-    />
-  </div>
+    <div class="time-line-container grid gap-4 mb-10">
+        <TimeLineElement
+                title="Ph.D - Natural Language Processing (NLP) / Computer Science"
+                subtitle="Since Nov. 2021 - at Université Grenoble Alpes (UGA), Laboratoire d'Informatique de Grenoble (LIG), GETALP team, Grenoble, France"
+        />
+        <TimeLineElement
+                title="MSc - Natural Language Processing (NLP)"
+                subtitle="Sept. 2019 - Sept. 2021 at Institut des Sciences du Digital (IDMC), Université de Lorraine, Nancy, France"
+        >
+        </TimeLineElement>
+        <TimeLineElement
+                title="BS - Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales (MIASHS)"
+                subtitle="Sept. 2017 - June 2019 at Université de Bordeaux, Bordeaux, France"
+        >
+        </TimeLineElement>
+        <TimeLineElement
+                title="DUT - Computer Science"
+                subtitle="Sept. 2015 - June 2017 at Université de Bordeaux, Bordeaux, France"
+        />
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Ph.D in Natural Language Processing"
-      subtitle="From 2021 - at Université Grenoble Alpes, Grenoble, France"
-    >
-    </TimeLineElement>
-    <TimeLineElement
-        title="Temporary lecturer in Database"
-        subtitle="From January, 2022 to April, 2022 at IUT2 - Université Grenoble Alpes, Grenoble, France"
-    >
+    <div class="time-line-container mb-10">
+        <TimeLineElement
+                title="Ph.D Candidate in Natural Language Processing (NLP)"
+                subtitle="Since Nov. 2021 - at Université Grenoble Alpes (UGA), Grenoble, France"
+        >
+            <strong>Thesis subject:</strong> "Automatic Speech Translation into pictograms"<br/>
 
-    </TimeLineElement>
-    <TimeLineElement
-      title="Research Intern"
-      subtitle="From March, 2021 to August, 2021 at CNRS - Centre national de la recherche scientifique / Lacito (UMR7107), Villejuif, France"
-    >
-    Master's thesis: "Recognizing lexical units in low-resource contexts with supervised and unsupervised neural networks".<br/>
-      Supervised by Guillaume Wisniewski (LLF, CNRS), Alexis Michaud & Séverine Guillaume (Lacito, CNRS)
-    </TimeLineElement>
-    <TimeLineElement
-      title="Research intern"
-      subtitle="From June, 2020 to August, 2020 at CNRS - Centre national de la recherche scientifique / Lacito (UMR7107), Villejuif, France"
-    >
-      Temporal alignment between transcriptions and audio of Japhug language data (Pangloss collection) using speech recognition tools.
-      Addition of temporal information in transcriptions.<br/>
-      Supervised by Laurent Besacier (Naver Labs), Alexis Michaud & Séverine Guillaume (Lacito, CNRS)
-    </TimeLineElement>
-    <TimeLineElement
-        title="Research intern"
-        subtitle="From April, 2017 to June, 2017 at University of Sunderland, Sunderland, UK"
-    >
-      Design and development of an android application to measure a person's sensitivity to different emotions from facial expressions.
-      Visualization and interpretation of the results.<br/>
-      Supervised by Kathy Clawson.
-    </TimeLineElement>
-  </div>
+              &bull; Development and training of <strong>AI/NLP models for Automatic Translation and Automatic Speech
+                    Recognition</strong>.<br/>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-  <text class="font-bold">Programming languages:</text>
-  <ul class="list-disc md:columns-4 columns-2 mx-6">
-    <li>Python</li>
-    <li>JAVA</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>AngularJS</li>
-    <li>Bash</li>
-    <li>PHP</li>
-    <li>Javascript</li>
-    <li>Latex, Beamer</li>
+          &bull;      Implementation of a model evaluation protocol and analysis of the results.<br/>
+
+          &bull;   International <strong>scientific collaborations</strong> (JSALT 2022 Workshop, ANR Projects).
+
+
+        </TimeLineElement>
+        <TimeLineElement
+                title="Temporary lecturer in Database"
+                subtitle="Jan. - April 2022 at IUT2 - Université Grenoble Alpes, Grenoble, France"
+        >
+            &bull; Teaching the Database module to six groups of students in their second year of DUT (University
+            Technology Diploma).<br/>
+            &bull; <strong>Preparation and organization of pedagogical content</strong> throughout the semester.<br/>
+            &bull; <strong>Student monitoring</strong> and assessment of learning outcomes.
+
+
+        </TimeLineElement>
+        <TimeLineElement
+                title="Research Intern"
+                subtitle="From March, 2021 to August, 2021 at CNRS - Centre national de la recherche scientifique / Lacito (UMR7107), Villejuif, France"
+        >
+            <strong>Master's thesis:</strong> "Recognizing lexical units in low-resource contexts with supervised and
+            unsupervised neural networks"<br/>
+            &bull; Adaptation and training of recent <strong>neural models for Automatic Speech Recognition</strong> in
+            two rare languages.<br/>
+            &bull; Dissemination of results at <strong>national (LIFT, TALN) and international conferences
+            (ACL)</strong>.
+
+
+        </TimeLineElement>
+        <TimeLineElement
+                title="Research intern"
+                subtitle="June - Aug. 2020 at CNRS - Centre national de la recherche scientifique / Lacito (UMR7107), Villejuif, France"
+        >
+          &bull; <strong>Temporal alignment</strong> between transcriptions and audio of Japhug language data (Pangloss
+            collection) using speech recognition tools.<br/>
+          &bull; Addition of temporal information in transcriptions.
+        </TimeLineElement>
+        <TimeLineElement
+                title="Research intern"
+                subtitle="April 2017 - June 2017 at University of Sunderland, Sunderland, UK"
+        >
+          &bull; <strong>Design and development of an android application</strong> to measure a person's sensitivity to
+            different emotions from facial expressions.<br/>
+          &bull; Visualization and interpretation of the results.
+        </TimeLineElement>
+    </div>
+
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+    <text class="font-bold">Programming languages:</text>
+    <ul class="list-disc md:columns-4 columns-2 mx-6">
+        <li>Python</li>
+        <li>JAVA</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>AngularJS</li>
+        <li>Bash</li>
+        <li>PHP</li>
+        <li>Javascript</li>
+        <li>Latex, Beamer</li>
+    </ul>
+    <br/>
+    <text class="font-bold">Libraries:</text>
+    <ul class="list-disc md:columns-4 columns-2 mx-6">
+        <li>Pytorch</li>
+        <li>Transformers</li>
+        <li>HuggingFace</li>
+        <li>Fairseq</li>
+        <li>NLTK</li>
+        <li>Pandas</li>
+        <li>SpaCy</li>
+        <li>Gensim</li>
+        <li>scikit-learn</li>
+        <li>NumPy</li>
+        <li>Matplotlib</li>
+    </ul>
+  <br/>
+  <text class="font-bold">AI Models and Techniques</text>
+  <ul class="list-disc md:columns-2 columns-2 mx-6">
+    <li>LLMs</li>
+    <li>Pre-training, Fine-tuning, Transfer Learning</li>
+    <li>High-performance computing (HPC) - Jean-Zay, GPUs</li>
   </ul>
   <br/>
-  <text class="font-bold">Libraries:</text>
-  <ul class="list-disc md:columns-4 columns-2 mx-6">
-    <li>Pytorch</li>
-    <li>HuggingFace</li>
-    <li>Fairseq</li>
-    <li>NLTK</li>
-    <li>Pandas</li>
-    <li>SpaCy </li>
-    <li>Gensim</li>
-    <li>scikit-learn</li>
-    <li>NumPy</li>
-    <li>Matplotlib</li>
-  </ul>
-  <br/>
-  <text class="font-bold">High-performance computing (HPC) - Jean-Zay, GPUs</text>
-  <br/><br/>
-  <text class="font-bold">Operating systems:</text>
-  <ul class="list-disc md:columns-4 columns-2 mx-6">
-    <li>Unix</li>
-    <li>Windows</li>
-  </ul>
-  <br/>
-  <text class="font-bold">Softwares:</text>
-  <ul class="list-disc md:columns-4 columns-2 mx-6">
-    <li>Anaconda</li>
-    <li>Git</li>
-    <li>PyCharm</li>
-    <li>Microsoft Office Suite</li>
-    <li>IntelliJ IDEA</li>
-    <li>Android Studio</li>
-    <li>Eclipse</li>
-    <li>Praat</li>
-  </ul>
-  <br/>
+    <text class="font-bold">Operating systems:</text>
+    <ul class="list-disc md:columns-4 columns-2 mx-6">
+        <li>Unix</li>
+        <li>Windows</li>
+    </ul>
+    <br/>
+    <text class="font-bold">Software:</text>
+    <ul class="list-disc md:columns-4 columns-2 mx-6">
+        <li>Anaconda</li>
+        <li>Versioning tools (Git)</li>
+        <li>PyCharm</li>
+        <li>Microsoft Office Suite</li>
+        <li>IntelliJ IDEA</li>
+        <li>Android Studio</li>
+        <li>Eclipse</li>
+        <li>Praat</li>
+    </ul>
+    <br/>
 
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Languages</div>
-  </div>
+    <div class="mt-8 mb-5">
+        <div class="text-3xl w-full font-bold">Languages</div>
+    </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      French (Native)
-    </li>
-    <li>
-      English (C1)
-    </li>
-  </ul>
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+            French (Native)
+        </li>
+        <li>
+            English (C1)
+        </li>
+    </ul>
 </BaseLayout>

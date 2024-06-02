@@ -10,21 +10,25 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
     <div class="text-xl py-1 font-bold">Since 2022</div><br/>
 
-    <ul class="list-disc mx-6">
-        <li>
-            LigCOM - member of the communication group of the LIG. We create the LIG brochure, communication materials, photo reports, newsletters, etc. </li>
-        <br/>
-        <li>
-            QVT - member of the "Quality of life at work" group of the LIG. I try to put in place measures to help PhD students and improve the working life in the lab.
-            I created a "Welcome PhD Booklet" for new PhD students.
-        </li>
-        <button class="btn btn-outline btn-warning btn-sm mt-2 mb-6 mr-2"><a target="_blank" href="https://cloud.univ-grenoble-alpes.fr/s/GoaTEmiCH76fiwt">Booklet EN</a></button>
-        <button class="btn btn-outline btn-success btn-sm mt-2 mb-6 mr-2"><a target="_blank" href="https://cloud.univ-grenoble-alpes.fr/s/BSL8rosXEnFifin">Booklet FR</a></button>
-        <br/>
-        <li>
-            Member of the RJCP (Rencontre des Jeunes Chercheurs en Parole) organising committee for the 2023 edition in Grenoble.
-        </li>
-    </ul>
-
-    <div class="divider my-0"></div>
+    <div class="overflow-x-auto">
+        <table class="table table-lg">
+            <tbody>
+            <tr>
+                <td><strong>LigCOM</strong></td>
+                <td>Member of the communication group at LIG. We create the LIG brochure, communication materials, photo reports, newsletters, and more.</td>
+            </tr>
+            <tr>
+                <td><strong>QVT</strong></td>
+                <td>Member of the 'Quality of Life at Work' group at LIG. I work on implementing measures to support PhD students and improve the working environment in the lab. I created a 'Welcome PhD Booklet' for new PhD students.<br/>
+                    <button class="btn btn-outline btn-accent btn-sm mt-2 mr-2"><a target="_blank" href="https://cloud.univ-grenoble-alpes.fr/s/GoaTEmiCH76fiwt">Booklet EN</a></button>
+                    <button class="btn btn-outline btn-success btn-sm mt-2 mr-2"><a target="_blank" href="https://cloud.univ-grenoble-alpes.fr/s/BSL8rosXEnFifin">Booklet FR</a></button>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>RJCP</strong></td>
+                <td>Member of the <a href="https://rjcp-2023.sciencesconf.org/" target="_blank" class="link-hover link-success">RJCP (Rencontre des Jeunes Chercheurs en Parole)</a> organizing committee for the 2023 edition in Grenoble.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </BaseLayout>

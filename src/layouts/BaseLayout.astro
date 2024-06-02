@@ -5,12 +5,12 @@ import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+const {image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSidebar = true, sideBarActiveItemID } = Astro.props;
 
-const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSidebar = true, sideBarActiveItemID } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="autumn">
+<html data-theme="autumn">
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
@@ -20,7 +20,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSideba
       <div class="drawer-content bg-base-100">
         <Header title={SITE_TITLE} />
         <div class="md:flex md:justify-center">
-          <main class="p-6 pt-10 lg:max-w-[1100px] max-w-[100vw]">
+          <main class="p-6 pt-10 lg:max-w-[1400px] max-w-[100vw]">
             <slot />
           </main>
         </div>

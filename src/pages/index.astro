@@ -8,15 +8,15 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 
 const last_posts = posts.slice(0, 3);
 ---
-
-<BaseLayout sideBarActiveItemID="home">
+<BaseLayout sideBarActiveItemID="home" class="w-full">
   <div class=" mt-6">
     <!--<div class="text-xl py-1"></div>-->
     <div class="text-5xl font-bold">Cécile MACAIRE</div>
     <div class="text-3xl py-3 font-bold">Ph.D Candidate in NLP</div>
+    <br/>
     <div class="py-4">
       <text class="text">
-        Welcome ! 👋 I am a third-year Ph.D Candidate in Natural Language Processing at <a class="link-secondary" href="https://lig-getalp.imag.fr/fr/accueil/" target="_blank">GETALP</a>, Université Grenoble Alpes (UGA), <a class="link-secondary" href="https://www.liglab.fr/" target="_blank">LIG</a>. <br /><br />
+        Welcome ! 👋 I am a third-year Ph.D Candidate in Natural Language Processing at <a class="link-secondary link-hover" href="https://lig-getalp.imag.fr/fr/accueil/" target="_blank">GETALP</a>, Université Grenoble Alpes (UGA), <a class="link-secondary link-hover" href="https://www.liglab.fr/" target="_blank">LIG</a>. <br /><br />
         My current research focuses on: <br />
 
         <div class="carousel carousel-center p-7 space-x-7 rounded-box">
@@ -49,11 +49,12 @@ const last_posts = posts.slice(0, 3);
 
         </div>
         <br /><br />
-        I am supervised by Profs. Benjamin Lecouteux, Didier Schwab, and Assoc. Prof. Emmanuelle Esperança-Rodier.<br />
-        My PhD is part of <a class="link-secondary" href="https://propicto.unige.ch/" target="_blank">PROPICTO</a>, a French-Swiss bilateral project funded by the French National Research Agency (ANR) and the Swiss National Science Foundation (SNF).
+        My Ph.D is part of <a class="link-secondary link-hover" href="https://propicto.unige.ch/" target="_blank">PROPICTO</a>, a French-Swiss bilateral project funded by the French National Research Agency (ANR) and the Swiss National Science Foundation (SNF).
       </text>
     </div>
+    <br/>
     <div class="divider my-0"></div>
+    <br/>
     <div class="text-2xl w-full font-bold mb-5 mt-8">
       Location
     </div>
