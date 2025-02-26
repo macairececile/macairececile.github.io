@@ -21,8 +21,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          node-version: 18
-          package-manager: npm@latest
+          path: my-artifact
   build:
     runs-on: ubuntu-latest
     steps:
