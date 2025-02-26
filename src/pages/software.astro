@@ -4,8 +4,9 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title="Software" sideBarActiveItemID="software">
+
     <div>
-        <div class="text-3xl w-full font-bold mb-5">Software & Dataset</div>
+        <div class="mt-6 text-3xl w-full font-bold mb-5">Software, Models & Dataset</div>
     </div>
 
     <div class="flex flex-wrap gap-4 justify-center">
@@ -14,22 +15,22 @@ import HorizontalCard from "../components/HorizontalCard.astro";
                 <img src="/Voice2Picto.png" alt="Voice2Picto" class="Voice2Picto"/>
             </figure>
             <div class="card-body items-center justify-end">
-                <h2 class="card-title">Voice2Picto</h2>
-                <p>App which directly translates speech into a sequence of pictograms.</p>
+                <h2 class="card-title text-2xl">Voice2Picto</h2>
+                <p class="text-lg mb-4">App which directly translates speech into a sequence of pictograms.</p>
                 <div class="card-actions">
-                    <button class="btn btn-secondary">
+                    <button class="btn btn-secondary mb-2">
                         <a target="_blank" href="https://github.com/macairececile/Voice2Picto">Link</a>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <!--<div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-5 pt-5">
                 <img src="/annotvocab.png" alt="AnnotVocab" class="AnnotVocab"/>
             </figure>
             <div class="card-body items-center justify-end">
-                <h2 class="card-title">DicoPicto</h2>
+                <h2 class="card-title text-2xl">DicoPicto</h2>
                 <p>Online platform that allows to manually annotate words into ARASAAC pictograms.</p>
                 <div class="card-actions">
                     <button class="btn btn-secondary">
@@ -38,6 +39,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
                 </div>
             </div>
         </div>
+
 
         <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-5 pt-5">
@@ -54,8 +56,9 @@ import HorizontalCard from "../components/HorizontalCard.astro";
                 </div>
             </div>
         </div>
+        --!>
 
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <!--<div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-5 pt-5">
                 <img src="/emosense.png" alt="emosense" class="emosense"/>
             </figure>
@@ -64,22 +67,52 @@ import HorizontalCard from "../components/HorizontalCard.astro";
                 <p>An android application to measure sensitivity to different emotions from facial expression.</p>
             </div>
         </div>
+        --!>
 
         <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-5 pt-5">
                 <img src="/propicto.svg" alt="propicto_data" class="propicto_data"/>
             </figure>
             <div class="card-body items-center justify-end">
-                <h2 class="card-title">Propicto</h2>
-                <p>Corpus of French aligned Speech, text, and pictograms (the pictograms correspond to identifiers
-                    linked to
-                    ARASAAC pictograms).</p>
+                <h2 class="card-title text-2xl">Propicto-orféo</h2>
+                <p class="text-lg mb-4">Corpus of French aligned Speech, text, and pictograms (the pictograms correspond to identifiers
+                    linked to ARASAAC pictograms).</p>
                 <div class="card-actions">
-                    <button class="btn btn-secondary"><a target="_blank"
+                    <button class="btn btn-secondary mb-2"><a target="_blank"
                                                          href="https://www.ortolang.fr/market/corpora/propicto">Link</a>
                     </button>
                 </div>
             </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-5 pt-5">
+                        <img width="150" src="/hf.svg" alt="propicto_hf" class="propicto_hf"/>
+                    </figure>
+                    <div class="card-body items-center justify-end">
+                        <h2 class="card-title text-2xl">Propicto</h2>
+                        <p class="text-lg mb-4">Official Propicto repository on Hugging Face, featuring a collection of models, datasets, and demos.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-secondary mb-2"><a target="_blank"
+                                                                 href="https://huggingface.co/Propicto">Link</a>
+                            </button>
+                        </div>
+                    </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class="px-5 pt-5">
+                                <img width="200" src="/TextToPicto.png" alt="imageclef" class="imageclef"/>
+                            </figure>
+                            <div class="card-body items-center justify-end">
+                                <h2 class="card-title text-2xl">ImageCLEF-ToPicto</h2>
+                                <p class="text-lg mb-4">Official ImageCLEF-ToPicto repository on Hugging Face, featuring a collection of datasets, and a demo to visualize a sequence of pictograms from a set of tokens.</p>
+                                <div class="card-actions">
+                                    <button class="btn btn-secondary mb-2"><a target="_blank"
+                                                                         href="https://huggingface.co/ToPicto">Link</a>
+                                    </button>
+                                </div>
+                            </div>
         </div>
     </div>
 

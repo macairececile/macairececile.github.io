@@ -1,3 +1,45 @@
+/*@import "tailwindcss/base";*/
+/*@import "tailwindcss/components";*/
+/*@import "tailwindcss/utilities";*/
+
+/*@layer base {*/
+/*    :root {*/
+/*        --font-roboto: "Roboto", sans-serif;*/
+/*    }*/
+/*}*/
+
+/*body {*/
+/*    font-family: var(--font-roboto);*/
+/*}*/
+
+
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-64 {
+    width: 16rem; /* Adjust as needed */
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+

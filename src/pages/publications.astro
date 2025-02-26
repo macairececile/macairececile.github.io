@@ -5,18 +5,42 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Publications" sideBarActiveItemID="publications">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Publications</div>
+    <div class="mt-6 text-3xl w-full font-bold mb-5">Publications</div>
   </div>
 
-  📄 To get the latest publications, please check <a class="link-secondary link-hover" href="https://scholar.google.com/citations?user=5cUKtcAAAAAJ&hl=fr" target="_blank">Google Scholar</a>,
+  <p class="text-lg">📄 To get the latest publications, please check <a class="link-secondary link-hover" href="https://scholar.google.com/citations?user=5cUKtcAAAAAJ&hl=fr" target="_blank">Google Scholar</a>,
   <a class="link-secondary link-hover" href="https://aclanthology.org/people/c/cecile-macaire/" target="_blank">ACL Anthology</a> or
   <a class="link-secondary link-hover" href="https://hal.science/search/index?q=cecile-macaire" target="_blank">HAL/IdHAL: cecile-macaire</a>.
+  </p>
+  <p class="text-lg">Below is a curated selection of my publications.</p>
   <div class="divider"></div>
-  <div role="alert" class="alert bg-base-100 border-base-100">
-    <span class="text-2xl py-1 font-bold">2024</span>
 
+  <div role="alert" class="alert bg-white border-white flex justify-between">
+    <span class="text-3xl py-1 font-bold">2024</span>
   <br/>
-  <ul class="list">
+  <ul class="list w-3/4">
+
+  <li>
+          <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://inria.hal.science/hal-04623007/">Approches cascade et de bout-en-bout pour la traduction automatique de la parole en pictogrammes</a></p>
+          <text class="font-bold">Cécile Macaire</text>, Chloé Dion, Didier Schwab, Benjamin Lecouteux, Emmanuelle Esperança-Rodier.
+          <p>In <text class="italic">Actes de la 31ème Conférence sur le Traitement Automatique des Langues Naturelles, volume 1 : articles longs et prises de position</text>, pages 22–35, Toulouse, France. ATALA and AFPC.</p>
+          <p>(Prix du meilleur article)</p>
+          </li>
+        <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://inria.hal.science/hal-04623007/">Article</a></button>
+        <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://github.com/macairececile/speech-to-pictograms">Code</a></button>
+        <button class="btn btn-outline btn-success btn-sm mt-4"><a target="_blank" href="https://huggingface.co/Propicto">Dataset & Models</a></button>
+    <div class="divider"></div>
+
+  <li>
+        <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://www.isca-archive.org/interspeech_2024/macaire24_interspeech.html">Towards Speech-to-Pictograms Translation</a></p>
+        <text class="font-bold">Cécile Macaire</text>, Chloé Dion, Didier Schwab, Benjamin Lecouteux, Emmanuelle Esperança-Rodier.
+        <p>In <text class="italic">Proc. Interspeech 2024, 857-861, doi: 10.21437/Interspeech.2024-490</text></p></li>
+      <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://www.isca-archive.org/interspeech_2024/macaire24_interspeech.pdf">Article</a></button>
+      <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://github.com/macairececile/speech-to-pictograms">Code</a></button>
+      <button class="btn btn-outline btn-success btn-sm mt-4"><a target="_blank" href="https://huggingface.co/Propicto">Dataset & Models</a></button>
+  <div class="divider"></div>
+
+
     <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://aclanthology.org/2024.lrec-main.76/">A Multimodal French Corpus of Aligned Speech, Text, and Pictogram Sequences for Speech-to-Pictogram Machine Translation</a></p>
       <text class="font-bold">Cécile Macaire</text>, Chloé Dion, Jordan Arrigo, Claire Lemaire, Emmanuelle Esperança-Rodier, Benjamin Lecouteux, and Didier Schwab.
@@ -43,11 +67,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   </div>
 
   <div class="divider"></div>
-  <div role="alert" class="alert bg-base-100 border-base-100">
-    <span class="text-2xl py-1 font-bold">2023</span>
-
+  <div role="alert" class="alert bg-white border-white flex justify-between">
+      <span class="text-3xl py-1 font-bold">2023</span>
     <br/>
-    <ul class="list">
+    <ul class="list w-3/4">
     <li>
     <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://aclanthology.org/2023.jeptalnrecital-demos.4">Voice2Picto : un système de traduction automatique de la parole vers des pictogrammes</a></p>
       <text class="font-bold">Cécile Macaire</text>, Emmanuelle Esperança-Rodier, Benjamin Lecouteux, and Didier Schwab.
@@ -57,13 +80,13 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     <button class="btn btn-outline btn-success btn-sm mt-4"><a target="_blank" href="https://github.com/macairececile/Voice2Picto">Code</a></button>
       <div class="divider"></div>
 
-    <li>
+    <!--<li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://aclanthology.org/2023.jeptalnrecital-demos.3">Plateformes pour la création de données en pictogrammes</a></p>
       <text class="font-bold">Cécile Macaire</text>, Jordan Arrigo, Chloé Dion, Claire Lemaire, Emmanuelle Esperança-Rodier, Benjamin Lecouteux, and Didier Schwab.
       <p>In <text class="italic">Actes de CORIA-TALN 2023. Actes de la 30e Conférence sur le Traitement Automatique des Langues Naturelles (TALN), volume 5 : démonstrations</text>, pages 6–9, Paris, France. ATALA.</p></li>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://aclanthology.org/2023.jeptalnrecital-demos.3.pdf">Article</a></button>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="/publications/eamt2023.pdf">Poster</a></button>
-    <div class="divider"></div>
+    <div class="divider"></div>--!>
 
     <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://aclanthology.org/2023.eamt-1.60/">PROPICTO: Developing Speech-to-Pictograph Translation Systems to Enhance Communication Accessibility</a></p>
@@ -82,11 +105,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   </div>
 
   <div class="divider"></div>
-  <div role="alert" class="alert bg-base-100 border-base-100">
-    <span class="text-2xl py-1 font-bold">2022</span>
-
-    <br/>
-    <ul class="list">
+  <div role="alert" class="alert bg-white border-white flex justify-between">
+        <span class="text-3xl py-1 font-bold">2022</span>
+      <br/>
+      <ul class="list w-3/4">
     <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://aclanthology.org/2022.findings-acl.197">Automatic Speech Recognition and Query By Example for Creole Languages Documentation</a></p>
       <text class="font-bold">Cécile Macaire</text>, Didier Schwab, Benjamin Lecouteux, and Emmanuel Schang.
@@ -110,44 +132,47 @@ import HorizontalCard from "../components/HorizontalCard.astro";
       Séverine Guillaume, Guillaume Wisniewski, <text class="font-bold">Cécile Macaire</text>, Guillaume Jacques, Alexis Michaud, Benjamin Galliot, Maximin Coavoux, Solange Rossato, Minh-Châu Nguyên, and Maxime Fily.
       <p>In <text class="italic">Proceedings of the Fifth Workshop on the Use of Computational Methods in the Study of Endangered Languages</text>, pages 170–178, Dublin, Ireland. Association for Computational Linguistics.</p></li>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://aclanthology.org/2022.computel-1.21.pdf">Article</a></button>
-    <div class="divider"></div>
 
+
+    <!--
+    <div class="divider"></div>
     <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://hal-lara.archives-ouvertes.fr/hal-04176910/">Multi-lingual Speech to Speech Translation for Under-Resourced Languages</a></p>
       Anthony Larcher, Yannick Estève, Mickael Rouvier, Natalia Tomashenko, Jarod Duret, et al..
       <p>Le Mans Université. 2022. ⟨hal-04176910⟩</p></li>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://hal.science/hal-04176910v1/document">Article</a></button>
+    --!>
 
   </ul>
   </div>
 
   <div class="divider"></div>
-  <div role="alert" class="alert bg-base-100 border-base-100">
-    <span class="text-2xl py-1 font-bold">2021</span>
-
-    <br/>
-    <ul class="list">
-
-    <li>
+  <div role="alert" class="alert bg-white border-white flex justify-between">
+          <span class="text-3xl py-1 font-bold">2021</span>
+        <br/>
+        <ul class="list w-3/4">
+        <!--
+      <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://shs.hal.science/halshs-03475443">Spécialisation de modèles neuronaux pour la transcription phonémique : premiers pas vers la reconnaissance de mots pour les langues rares</a></p>
       <text class="font-bold">Cécile Macaire</text>, Guillaume Wisniewski, Séverine Guillaume, Benjamin Galliot, Guillaume Jacques, et al..
       <p>Journées scientifiques du Groupement de recherche ”Linguistique informatique, formelle et de terrain” (GDR LIFT), Dec 2021, Grenoble, France.</p></li>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://shs.hal.science/halshs-03475443/file/LIFT_reco_final.pdf">Article</a></button>
-    <div class="divider"></div>
+    <div class="divider"></div>--!>
 
     <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://hal.science/hal-03429051">Recognizing lexical units in low-resource language contexts with supervised and unsupervised neural networks</a></p>
       <text class="font-bold">Cécile Macaire</text>.
       <p>[Research Report] LACITO (UMR 7107). 2021. ⟨hal-03429051⟩</p></li>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://hal.science/hal-03429051/file/Macaire2021_RecognizingLexicalUnits.pdf">Article</a></button>
+    <!--
     <div class="divider"></div>
-
     <li>
       <p class="text-2xl pb-4 font-bold"><a class="link-hover" target="_blank" href="https://hal.science/hal-03047146">Alignement temporel entre transcriptions et audio de données de langue japhug</a></p>
       <text class="font-bold">Cécile Macaire</text>.
       <p>2èmes journées scientifiques du Groupement de Recherche Linguistique Informatique Formelle et de Terrain (LIFT), Dec 2020, Montrouge (virtuel), France. pp.9-22.</p></li>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://hal.science/hal-03047146/document">Article</a></button>
     <button class="btn btn-outline btn-success btn-sm mt-4 mr-2"><a target="_blank" href="https://github.com/macairececile/alignement_texte_son_japhug">Code</a></button>
+    --!>
   </ul>
   </div>
   <br/><br/>
