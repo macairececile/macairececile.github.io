@@ -15,14 +15,17 @@ permissions:
   id-token: write
 
 jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          node-version: 18
+          package-manager: npm@latest
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Upload artifact
-        if: github.event_name == 'push'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'webapp'
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
