@@ -34,8 +34,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Upload artifact
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'webapp'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
-      - name: Upload deb package
-       	uses: actions/upload-artifact@v4
+        uses: actions/deploy-pages@v4
