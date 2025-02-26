@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Upload artifact
         if: github.event_name == 'push'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'webapp'
       - name: Checkout your repository using git
